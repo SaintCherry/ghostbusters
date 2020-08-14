@@ -29,7 +29,6 @@ $(document).ready(function () {
             312: {
                 slidesPerView: 1,
             },
-
         }
     });
 });
