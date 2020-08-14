@@ -435,6 +435,7 @@ body {
     .navigation_link {
         font-size: 18px;
         color: #fff;
+        margin-right: 0;
     }
     .registration_link {
         padding: 0;
