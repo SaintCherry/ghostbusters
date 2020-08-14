@@ -419,11 +419,11 @@ body {
         display: none;
     }
     .input {
-        width: 170px;
+        width: 176px;
         height: 25px;
     }
     .navigation {
-        width: 100px;
+        width: 110px;
         height: 138px;
         display: flex;
         justify-content: space-between;
