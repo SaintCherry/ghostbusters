@@ -257,11 +257,27 @@ body {
     display: flex;
     align-items: center;    
 }
+.tab {
+    cursor: pointer;
+}
+
+
+                                /* TABS_CONTENT */
+
+
 .tabs_content {
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    visibility: hidden;
+}
+.tabs_content.visible{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 70px;
+    visibility: visible;
 }
 .section_title {
     font-weight: normal;
@@ -335,6 +351,14 @@ body {
     color: #000000;
     margin-top: 14px;
 }
+.button_next {
+    display: none;
+    position: absolute;
+    top: 58px;
+    right: 0;
+    cursor: pointer;
+    z-index: 99;
+}
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
@@ -369,7 +393,7 @@ body {
 
 
 
-/* Адаптация для смартфона */
+                            /* Адаптация для смартфона */
 
 
 
@@ -378,11 +402,12 @@ body {
         height: 65px;
         width: 319px;
         margin: auto;
+        margin-left: 70px;
         justify-content: space-between;
     }
 
 
-    /* Шторка */
+                                /* Шторка */
 
 
     .curtain {
@@ -456,9 +481,12 @@ body {
     .button {
         height: auto;
     }
+    .button_next {
+        display: block;
+    }
 
 
-    /* Конец шторки */
+                                /* Конец шторки */
 
 
     .container {
@@ -490,7 +518,7 @@ body {
     .about_film {
         margin-bottom: 40px;
     }
-    .tabs_content {
+    .tabs_content.visible {
         display: block;
         margin-top: 45px;
     }
@@ -513,5 +541,6 @@ body {
     }
     .news_card {
         margin-bottom: 20px;
+        max-width: 85%;
     }
 }

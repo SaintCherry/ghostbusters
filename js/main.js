@@ -1,10 +1,18 @@
 $(document).ready(function () {
     const mMenuBtn = $(".mobile_buttons");
-    const mMenu = $(".curtain")
+    const mMenu = $(".curtain");
+    const tab = $('.tab')
+    const tabContent = $('.tabs_content')
     mMenuBtn.on('click', function() {
         mMenu.toggleClass("active")
         $("body").toggleClass("no-scroll")
     });
+
+    tab.on('click', function() {
+        tab.toggleClass('active')
+        tabContent.toggleClass('visible')
+    });
+    
     var mySwiper = new Swiper(".swiper-container", {
         speed: 500,
         slidesPerView: 4,
@@ -13,9 +21,8 @@ $(document).ready(function () {
         grabCursor: true,
         autoHeight: true,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
+            nextEl: '.button_next',
+        },
         breakpoints: {
             992: {
                 slidesPerView: 4,
@@ -29,6 +36,7 @@ $(document).ready(function () {
             312: {
                 slidesPerView: 1,
             },
+            
         }
     });
 });
